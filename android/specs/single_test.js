@@ -3,13 +3,13 @@ const assert = require("assert");
 const https = require("https");
 const conf_file = process.argv[3] || 'conf/single.conf.js';
 
-// Set up desired capabilities for BrowserStack
+
 var capabilities = require('../' + conf_file).capabilities;
-capabilities['bstack:options'].source = 'mocha:sample-appium-4:v1.0';
+capabilities['LT:Options'].source = 'mocha:sample-appium-4:v1.0';
 
 var buildDriver = function (capabilities) {
   return new Builder()
-    .usingServer("https://hub.browserstack.com/wd/hub")
+    .usingServer("https://mobile-hub.lambdatest.com/wd/hub")
     .withCapabilities(capabilities)
     .usingHttpAgent(
       new https.Agent({
@@ -51,7 +51,7 @@ describe("Search Wikipedia Functionality", function () {
           30000
         )
       );
-      await insertTextSelector.sendKeys("BrowserStack");
+      await insertTextSelector.sendKeys("LambdaTest");
       await driver.sleep(5000);
 
       var allProductsName = await driver.findElements(
@@ -61,16 +61,12 @@ describe("Search Wikipedia Functionality", function () {
       );
 
       assert(allProductsName.length > 0);
-      //marking the test as Passed if search results have listed items
-      await driver.executeScript(
-        'browserstack_executor: {"action": "setSessionStatus", "arguments": {"status":"passed","reason": "Search in Wikipedia done correctly"}}'
-      );
+    
+     
     } catch (e) {
-      //marking the test as Failed if search results have not listed items
+
       console.log("Error:", e.message);
-      await driver.executeScript(
-        'browserstack_executor: {"action": "setSessionStatus", "arguments": {"status":"failed","reason": "Some elements failed to load"}}'
-      );
+     
     } finally {
       await driver.quit();
     }

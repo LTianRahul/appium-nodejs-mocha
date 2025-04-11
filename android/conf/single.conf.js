@@ -1,18 +1,18 @@
-USERNAME =  process.env.BROWSERSTACK_USERNAME || 'BROWSERSTACK_USERNAME',
-ACCESS_KEY = process.env.BROWSERSTACK_ACCESS_KEY || 'BROWSERSTACK_ACCESS_KEY',
+USERNAME =  process.env.BROWSERSTACK_USERNAME || 'rahulkumarlambdatest',
+ACCESS_KEY = process.env.BROWSERSTACK_ACCESS_KEY || 'CfViCjAWKL4e0nMDjzQgmx4ZeCHaZeycxgw4xaakQlApOJxMHQ',
   
 exports.capabilities = {
     "platformName" : "android",
-    "appium:deviceName" : "Google Pixel 6 Pro",
     "browserName" : "chrome",
-    "appium:osVersion": "12.0",
-    "appium:app" : "bs://<app-id>",
-    'bstack:options' : {
-        "projectName" : "BStack Demo",
-        "buildName" : "browserstack-build-1",
-        "sessionName" : "BStack single mocha-js",
-        "userName" : USERNAME,
-        "accessKey" : ACCESS_KEY,
-        "debug" : true
-    }
+    "LT:Options": {
+		"username": "rahulkumarlambdatest",
+		"accessKey": "CfViCjAWKL4e0nMDjzQgmx4ZeCHaZeycxgw4xaakQlApOJxMHQ",
+		"w3c": true,
+		"plugin": "node_js-mocha",
+        "platformName" : "android",
+        "deviceName" : "Pixel.*",
+        "platformversion": "15",
+        "isRealMobile": true,
+        "appium:app" : "lt://APP10160411451744399472575532",
+	}
 };
