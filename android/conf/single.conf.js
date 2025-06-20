@@ -11,10 +11,11 @@ exports.capabilities = {
 		"plugin": "node_js-mocha",
         "platformName" : "android",
         "deviceName" : "Pixel.*",
-        "platformversion": "15",
+        "platformVersion": "15",
         "isRealMobile": true,
         "build": "testRun",
         "name": "sampleTest",
         "appium:app" : "lt://APP10160521601750440880142826",
+        "network": true
 	}
 };
