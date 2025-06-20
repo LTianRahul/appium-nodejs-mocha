@@ -1,18 +1,19 @@
-USERNAME =  '{LT_USERNAME}',
-ACCESS_KEY = '{LT_ACCESS_KEY}',
+USERNAME =  'rahulkumarlambdatest',
+ACCESS_KEY = 'CfViCjAWKL4e0nMDjzQgmx4ZeCHaZeycxgw4xaakQlApOJxMHQ',
   
 exports.capabilities = {
     "platformName" : "android",
     "browserName" : "chrome",
     "LT:Options": {
-		"username": "{LT_USERNAME}",
-		"accessKey": "{LT_ACCESS_KEY",
+		"username": "rahulkumarlambdatest",
+		"accessKey": "CfViCjAWKL4e0nMDjzQgmx4ZeCHaZeycxgw4xaakQlApOJxMHQ",
 		"w3c": true,
 		"plugin": "node_js-mocha",
         "platformName" : "android",
         "deviceName" : "Pixel.*",
         "platformversion": "15",
         "isRealMobile": true,
-        "appium:app" : "lt://APP10160411451744399472575532",
+        "build": "testRun",
+        "appium:app" : "lt://APP10160521601750440880142826",
 	}
 };
