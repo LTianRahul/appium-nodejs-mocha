@@ -11,7 +11,7 @@ exports.capabilities = {
 		"plugin": "node_js-mocha",
         "platformName" : "android",
         "deviceName" : "Pixel.*",
-        "platformversion": "15",
+        "platformVersion": "15",
         "isRealMobile": true,
         "build": "testRun",
         "name": "sampleTest",
