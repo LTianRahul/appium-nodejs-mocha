@@ -14,7 +14,7 @@ var buildDriver = function (capabilities) {
     .usingHttpAgent(
       new https.Agent({
         keepAlive: true,
-        keepAliveMsecs: 1000000,
+        keepAliveMsecs: 100000,
       })
     )
     .build();
