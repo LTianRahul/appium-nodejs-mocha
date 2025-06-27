@@ -14,7 +14,7 @@ var buildDriver = function (capabilities) {
     .usingHttpAgent(
       new https.Agent({
         keepAlive: true,
-        keepAliveMsecs: 1000000,
+        keepAliveMsecs: 100000,
       })
     )
     .build();
@@ -51,7 +51,7 @@ describe("Search Wikipedia Functionality", function () {
           30000
         )
       );
-      await insertTextSelector.sendKeys("LambdaTest");
+      await insertTextSelector.sendKeys("Bito PR");
       await driver.sleep(5000);
 
       var allProductsName = await driver.findElements(
