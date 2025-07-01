@@ -51,7 +51,7 @@ describe("Search Wikipedia Functionality", function () {
           30000
         )
       );
-      await insertTextSelector.sendKeys("LambdaTest");
+      await insertTextSelector.sendKeys("Bito PR");
       await driver.sleep(5000);
 
       var allProductsName = await driver.findElements(
