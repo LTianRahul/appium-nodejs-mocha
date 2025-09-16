@@ -16,6 +16,7 @@ exports.capabilities = {
         "build": "testRun",
         "name": "sampleTest",
         "appium:app" : "lt://APP10160481301757939912255750",
-        "geoLocation": "US"
+        "geoLocation": "US",
+        "network": true
 	}
 };
