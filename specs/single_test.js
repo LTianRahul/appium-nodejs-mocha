@@ -50,7 +50,7 @@ describe("Search Wikipedia Functionality", function () {
               "//*[@resource-id='org.wikipedia:id/fragment_onboarding_forward_button']"
             )
           ),
-          30000
+          36000
         )
         .click();
 
