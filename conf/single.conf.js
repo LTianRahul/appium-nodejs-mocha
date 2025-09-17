@@ -16,6 +16,8 @@ exports.capabilities = {
         "build": "testRun",
         "name": "sampleTest",
         "appium:app" : "lt://APP10160481301757939912255750",
-        "network": true
+        "network": true,
+        "video": true,
+        "password": "12345"
 	}
 };
