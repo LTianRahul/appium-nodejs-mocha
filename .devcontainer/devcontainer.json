@@ -10,7 +10,8 @@
   "customizations": {
     "vscode": {
       "extensions": [
-        "Bito.Bito"  // Bito plugin
+        "bito.bito",
+        "coderabbit.coderabbit-vscode" 
       ],
       "settings": {
         "terminal.integrated.defaultProfile.linux": "bash"
@@ -18,6 +19,6 @@
     }
   },
   "onCreateCommand": "echo 'Appium Codespace ready!'",
-  "postStartCommand": "cd android && npm run single",
+  "postStartCommand": "cd android && npm i",
   "remoteUser": "node"
 }
