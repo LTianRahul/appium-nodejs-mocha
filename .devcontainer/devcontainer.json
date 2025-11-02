@@ -1,0 +1,23 @@
+{
+  "name": "Node.js Appium Environment",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:20", 
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "20"
+    }
+  },
+  "postCreateCommand": "cd android && npm install",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "Bito.Bito"  // Bito plugin
+      ],
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "bash"
+      }
+    }
+  },
+  "onCreateCommand": "echo 'Appium Codespace ready!'",
+  "postStartCommand": "cd android && npm run single",
+  "remoteUser": "node"
+}
