@@ -11,7 +11,9 @@
     "vscode": {
       "extensions": [
         "bito.bito",
-        "coderabbit.coderabbit-vscode" 
+        "coderabbit.coderabbit-vscode",
+        "ms-vscode.remote-server",
+        "github.codespaces"
       ],
       "settings": {
         "terminal.integrated.defaultProfile.linux": "bash"
