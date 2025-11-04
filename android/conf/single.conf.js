@@ -15,7 +15,7 @@ exports.capabilities = {
         "isRealMobile": true,
         "build": "testRun",
         "name": "sampleTest",
-        "appium:app" : "lt://APP10160521601750440880142826",
+        "appium:app" : "lt://APP10160211661761880228759927",
         "network": true,
         "visual": true,
         "geoLocation": "US"
