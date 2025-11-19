@@ -18,7 +18,8 @@ exports.capabilities = {
         "appium:app" : "lt://APP10160211661761880228759927",
         "network": true,
         "visual": true,
-        "geoLocation": "US"
+        "geoLocation": "US",
+        "video": true
 	}
 };
 
