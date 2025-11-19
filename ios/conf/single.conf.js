@@ -3,9 +3,9 @@ ACCESS_KEY = process.env.BROWSERSTACK_ACCESS_KEY || 'BROWSERSTACK_ACCESS_KEY',
   
 exports.capabilities = {
     "platformName" : "ios",
-    "appium:deviceName" : "iPhone 14 Pro",
+    "appium:deviceName" : "iPhone 17",
     "browserName" : "safari",
-    "appium:osVersion": "16",
+    "appium:osVersion": "18.0",
     "appium:app" : "bs://<app-id>",
     'bstack:options' : {
         "projectName" : "BStack Demo",

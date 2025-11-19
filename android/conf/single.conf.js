@@ -21,3 +21,4 @@ exports.capabilities = {
         "geoLocation": "US"
 	}
 };
+
