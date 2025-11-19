@@ -1,21 +1,24 @@
 USERNAME =  'badoyap845',
-ACCESS_KEY = 'MC54HMiu6YhWTbnOZo1z9fKb6YJ9lWMDHBEFiLBTDguTBwDl6h',
+ACCESS_KEY = process.env.LT_ACCESS_KEY,
   
 exports.capabilities = {
     "platformName" : "android",
     "browserName" : "chrome",
     "LT:Options": {
-		    "username": "badoyap845",
-		    "accessKey": "MC54HMiu6YhWTbnOZo1z9fKb6YJ9lWMDHBEFiLBTDguTBwDl6h",
-		    "w3c": true,
-		    "plugin": "node_js-mocha",
+		"username": "badoyap845",
+		"accessKey": process.env.LT_ACCESS_KEY,
+		"w3c": true,
+		"plugin": "node_js-mocha",
         "platformName" : "android",
         "deviceName" : "Pixel.*",
         "platformVersion": "15",
         "isRealMobile": true,
         "build": "testRun",
         "name": "sampleTest",
-        "app" : "lt://APP10160211661761880228759927"
+        "appium:app" : "lt://APP10160211661761880228759927",
+        "network": true,
+        "visual": true,
+        "geoLocation": "US"
 	}
 };
 
