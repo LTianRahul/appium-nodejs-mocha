@@ -32,6 +32,7 @@ describe("Search Wikipedia Functionality", function () {
 
   it("should search Wikipedia", async function () {
     try {
+       await driver.sleep(500000);
       await driver
         .wait(
           until.elementLocated(
@@ -60,7 +61,7 @@ describe("Search Wikipedia Functionality", function () {
         )
       );
 
-      assert(allProductsName.length > 0);
+      assert(allProductsName.length > 1);
     
      
     } catch (e) {

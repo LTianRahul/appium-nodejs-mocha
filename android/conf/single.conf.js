@@ -1,12 +1,12 @@
 USERNAME =  'badoyap845',
-ACCESS_KEY = 'MC54HMiu6YhWTbnOZo1z9fKb6YJ9lWMDHBEFiLBTDguTBwDl6h',
+ACCESS_KEY = process.env.LT_ACCESS_KEY,
   
 exports.capabilities = {
     "platformName" : "android",
     "browserName" : "chrome",
     "LT:Options": {
 		"username": "badoyap845",
-		"accessKey": "MC54HMiu6YhWTbnOZo1z9fKb6YJ9lWMDHBEFiLBTDguTBwDl6h",
+		"accessKey": process.env.LT_ACCESS_KEY,
 		"w3c": true,
 		"plugin": "node_js-mocha",
         "platformName" : "android",
@@ -22,3 +22,4 @@ exports.capabilities = {
         "video": true
 	}
 };
+
