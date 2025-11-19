@@ -14,7 +14,7 @@ var buildDriver = function (capabilities) {
     .usingHttpAgent(
       new https.Agent({
         keepAlive: true,
-        keepAliveMsecs: 1000000,
+        keepAliveMsecs: 100000,
       })
     )
     .build();
@@ -22,7 +22,7 @@ var buildDriver = function (capabilities) {
 
 // Mocha test case
 describe("Search Wikipedia Functionality", function () {
-  this.timeout(0);
+  this.timeout(2);
   var driver;
 
   beforeEach(function (done) {
