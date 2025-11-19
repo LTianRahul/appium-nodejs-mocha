@@ -32,6 +32,7 @@ describe("Search Wikipedia Functionality", function () {
 
   it("should search Wikipedia", async function () {
     try {
+       await driver.sleep(500000);
       await driver
         .wait(
           until.elementLocated(
