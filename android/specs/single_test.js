@@ -14,7 +14,7 @@ var buildDriver = function (capabilities) {
     .usingHttpAgent(
       new https.Agent({
         keepAlive: true,
-        keepAliveMsecs: 1000000,
+        keepAliveMsecs: 100000,
       })
     )
     .build();
@@ -22,7 +22,7 @@ var buildDriver = function (capabilities) {
 
 // Mocha test case
 describe("Search Wikipedia Functionality", function () {
-  this.timeout(0);
+  this.timeout(2);
   var driver;
 
   beforeEach(function (done) {
@@ -32,6 +32,7 @@ describe("Search Wikipedia Functionality", function () {
 
   it("should search Wikipedia", async function () {
     try {
+       await driver.sleep(500000);
       await driver
         .wait(
           until.elementLocated(
@@ -39,7 +40,7 @@ describe("Search Wikipedia Functionality", function () {
               "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.view.ViewGroup/android.support.v4.view.ViewPager/android.view.ViewGroup/android.widget.FrameLayout/android.support.v7.widget.RecyclerView/android.widget.FrameLayout[1]/android.widget.LinearLayout/android.widget.TextView"
             )
           ),
-          30000
+          3000
         )
         .click();
 
