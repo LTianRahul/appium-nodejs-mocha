@@ -19,27 +19,3 @@ exports.capabilities = {
 	}
 };
 
-// USERNAME =  'david.urrego.ext',
-// ACCESS_KEY = 'LT_KykGDXtj4dfgW7lF0vpkahSEIzfoDwegrpBL8dRAHOa05DV',
-  
-// exports.capabilities = {
-//     "platformName" : "ios",
-//     "browserName" : "safari",
-//     "LT:Options": {
-// 		"username": "david.urrego.ext",
-// 		"accessKey": "LT_KykGDXtj4dfgW7lF0vpkahSEIzfoDwegrpBL8dRAHOa05DV",
-// 		"w3c": true,
-// 		"plugin": "node_js-mocha",
-//         "platformName" : "ios",
-//         "deviceName" : "iPhone.*",
-//         "platformVersion": "18.0",
-//         "isRealMobile": true,
-//         "build": "LT Test1",
-//         "name": "sampleTest",
-//         "app" : "lt://APP10160211661761319470909626",
-//         "iosLiveInteraction": true,
-//         "idleTimeout": 1800,
-//         "resignApp": false
-// 	}
-// };
-
