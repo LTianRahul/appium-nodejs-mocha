@@ -22,7 +22,7 @@ var buildDriver = function (capabilities) {
 
 // Mocha test case
 describe("Search Wikipedia Functionality", function () {
-  this.timeout(2);
+  this.timeout(0);
   var driver;
 
   beforeEach(function (done) {
